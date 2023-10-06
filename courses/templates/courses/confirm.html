@@ -1,0 +1,32 @@
+{% extends 'students/layout.html' %}
+
+{% block body %}
+<div class="register-body">
+    <h2>Confirmation</h2>
+    <h4>Your Courses</h4>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Course</th>
+                <th scope="col">Semester</th>
+                <th scope="col">Year</th>
+                <th scope="col">Seat</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>SOFTWARE ENGINEERING</td>
+                <td>1</td>
+                <td>2023</td>
+                <td>20</td>
+                <td>OPEN</td>
+            </tr>
+        </tbody>
+    </table>
+    <a class="btn btn-secondary" href="{% url 'all_courses' %}">Back</a>
+    <a class="btn btn-dark" href="{% url 'home' %}">Confirm</a>
+</div>
+{% endblock %}
